@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Estilo del header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    max-width: 475px;
+    height: 50px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    padding: 0 23px;
+}
+
+nav span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 100%;
+    background: linear-gradient(45deg, #194b4f, #33fffc);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav a:nth-child(1):hover ~ span {
+    left: 0px;
+}
+
+nav a:nth-child(2):hover ~ span {
+    left: 88px;
+}
+
+nav a:nth-child(3):hover ~ span {
+    left: 190px;
+}
+
+nav a:nth-child(4):hover ~ span {
+    left: 280px;
+}
+
+nav a:nth-child(5):hover ~ span {
+    left: 378px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la barra de navegación de pestañas */
+.tabs {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px auto;
+    border-bottom: 10px solid #4e4646;
+    background-color: #464557;
+    width: 100%;
+    max-width: 600px;
+}
+
+.tabs li {
+    margin: 0 25px;
+}
+
+.tabs a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #3b3131;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.tabs li.active a, 
+.tabs li a:hover {
+    border-bottom: 3px solid #383d42;
+    color: #687480;
+}
+
+.course-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.course-button {
+    padding: 20px 30px;
+    margin: 10px;
+    border: none;
+    background-color: #ddd;
+    color: #000000;
+    cursor: pointer;
+}
+
+.bienvenido {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bienvenido h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.management-tools {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.management-button {
+    background-color: #271e1e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.management-button:hover {
+    background-color: #815a5a;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
